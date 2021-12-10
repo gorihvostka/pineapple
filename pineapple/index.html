@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Zoo</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Pineapple — Sass trainig project</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="./assets/icons/favicon.ico">
 </head>
 <body>
   <div class="container"> <!--backgr only-->
     <div class="wrapper_header"> <!--1360 + 40px max width, paddings, align-->
       <header class="header"> <!--header content 1140 + 40 px max width-->
-        <nav class="navbar">
-          <div class="navbar__logo">
+        <nav class="header__navbar navbar">
+          <div class="navbar__logo logo">
             <h1 hidden>Pineapple test page</h1>
           </div>
           <ul class="navbar__navigation">
@@ -23,16 +22,16 @@
             <li class="navbar__item"><a class="navbar__link" href="#">Победители</a></li>
           </ul>
         </nav>
-        <button class="btn btn_participate btn_participate_white" type="">Участвовать</button>
+        <button class="btn btn_white" type="">Участвовать</button>
       </header>
     </div>
     <div class="wrapper_main">
       <main class="main"><!--all content sections-->
         <section class="first">
           <div class="first__texts">
-            <h2 class="first__header">Ананас — теперь ягода, а каждый день – праздник!</h2>
-            <h4 class="first__subheader">Делай фото и выигрывай призы: 100 корзин с «Ягодным Лукошком» и яркие пледы.</h4>
-            <button class="btn btn_participate btn_participate_yellow" type="">Участвовать</button>
+            <h2 class="first__title main-title"><span class="accent">Ананас</span> — теперь ягода, а каждый день – праздник!</h2>
+            <h4 class="first__subtitle subtitle">Делай фото и выигрывай призы: 100 корзин с «Ягодным Лукошком» и яркие пледы.</h4>
+            <button class="btn btn_yellow" type="">Участвовать</button>
             <a class="first__link" href="#">Условия акции</a>
           </div>
           <picture class="first__pics">
@@ -41,14 +40,14 @@
         </section>
         <section class="terms">
           <div class="terms__heading">
-            <h3 class="terms__header">Условия акции</h3>
-            <h4 class="terms__subheader">Покупай продукцию, которая участвует в акции, — и повышай свои шансы на победу!</h4>
+            <h3 class="terms__title title">Условия <span class="accent">акции</span></h3>
+            <h4 class="terms__subtitle subtitle">Покупай продукцию, которая участвует в акции, — и повышай свои шансы на победу!</h4>
           </div>
           <div class="terms__steps">
             <div class="terms__step1">
               <img src="" class="terms__icon1" alt="icon1">
               <div class="terms__label">Шаг 1</div>
-              <p class="terms__text">Делай фото и публикуй в соцсетях с хэштегом #ягодный</p>
+              <p class="terms__text">Делай фото и публикуй в соцсетях с хэштегом <span class="accent">#ягодный</span></p>
             </div>
             <div class="terms__step2">
               <img src="" class="terms__icon2" alt="icon2">
@@ -64,8 +63,8 @@
         </section>
         <section class="prizes">
           <div class="prizes__heading">
-            <h3 class="prizes__header">Уникальные призы</h3>
-            <h4 class="prizes__subheader">Приготовьтесь выигрывать подарки от «Хлебного Дома»!</h4>
+            <h3 class="prizes__title title">Уникальные призы</h3>
+            <h4 class="prizes__subtitle subtitle">Приготовьтесь выигрывать подарки от «Хлебного Дома»!</h4>
           </div>
           <div class="prizes__elements">
             <div class="prizes__el1">
@@ -84,20 +83,20 @@
               <p class="prizes__number">40 шт.</p>
             </div>
           </div>
-          <button class="btn btn_participate" type="">
+          <button class="btn btn_white" type="">
             Участвовать
           </button>
         </section>
         <section class="winners">
           <div class="winners__heading">
-            <h3 class="winners__header">Наши победители</h3>
-            <h4 class="winners__subheader">Спасибо за участие в акции!</h4>
+            <h3 class="winners__title title">Наши победители</h3>
+            <h4 class="winners__subtitle subtitle">Спасибо за участие в акции!</h4>
             <p class="winners__text">Чтобы посмотреть результаты, выберите нужный этап розыгрыша.</p>
           </div>
           <div class="winners__switch">
-            <button class="btn btn_winners btn_winners_yellow" type="">Первая неделя</button>
-            <button class="btn btn_winners btn_winners_yellow" type="">Вторая неделя</button>
-            <button class="btn btn_winners btn_winners_yellow" type="">Третья неделя</button>
+            <button class="btn btn_yellow" type="">Первая неделя</button>
+            <button class="btn btn_yellow" type="">Вторая неделя</button>
+            <button class="btn btn_yellow" type="">Третья неделя</button>
           </div>
           <div class="winners__slider">
             <div class="winners__item winners__item_1">
@@ -134,9 +133,9 @@
         </section>
         <section class="more">
           <div class="more__heading">
-            <h3 class="more__header">Ознакомьтесь с продукцией «Хлебный Дом» на нашем новом сайте!</h3>
+            <h3 class="more__title title">Ищите продукцию «Хлебный Дом» на нашем новом сайте!</h3>
           </div>
-          <button class="more__btn">Подробнее</button>
+          <button class="more__btn btn btn_white">Подробнее</button>
         </section>
       </main>
     </div>
