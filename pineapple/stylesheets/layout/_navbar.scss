@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    flex: 0 1 600px;
+
+  &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 435px;
+    flex: 0 1 435px;
+  }
+
+  &__link {
+    color: $text-color;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 105%;
+  }
+}
