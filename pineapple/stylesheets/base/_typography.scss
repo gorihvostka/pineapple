@@ -1,7 +1,28 @@
 /**
  * Basic typography style for copy text
  */
+
 body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
+  background-color: hsla(220, 11%, 95%, 1);
+}
+
+.main-title {
+font-weight: 700;
+font-size: 80px;
+}
+
+.title {
+font-weight: 600;
+font-size: 60px;
+}
+
+.subtitle {
+font-weight: 600;
+font-size: 25px;
+}
+
+.accent {
+  color: $brand-color;
 }
