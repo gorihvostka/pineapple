@@ -1,0 +1,71 @@
+.first {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+  &__texts {
+    max-width: 665px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 60px;
+    max-width: 535px;
+  }
+
+  &__btn {
+    margin-right: 30px;
+  }
+
+  &__link {
+    font-size: 25px;
+  }
+
+  &__backgr {
+    position: relative;
+  }
+
+  &__cake {
+    position: relative;
+    left: 25%;
+  }
+
+  &__vector {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: -455px;
+  }
+
+  &__pineapple {
+    position: absolute;
+    z-index: -1;
+    right: -30%;
+  }
+
+  &__slice {
+    position: absolute;
+    z-index: -1;
+    bottom: 15%;
+    right: 5%;
+  }
+
+/*   &__pics {
+  position: absolute;
+    z-index: -1;
+    width: 822px;
+    height: 1047px;
+    left: 815px;
+    top: -136px;
+    overflow: hidden;
+    background-image: url(/assets/images/vector-backgr-cut.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100% auto;
+  } */
+}
