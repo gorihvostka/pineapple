@@ -4,6 +4,7 @@
 @import
   'abstracts/variables',
   'abstracts/functions',
+  'abstracts/placeholders',
   'abstracts/mixins';
 
 // 2. Vendors
@@ -22,12 +23,14 @@
   'layout/header',
   'layout/navbar',
   'layout/first',
+  'layout/terms',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
-  'components/logo';
+  'components/logo',
+  'components/step';
 
 // 6. Page-specific styles
 @import

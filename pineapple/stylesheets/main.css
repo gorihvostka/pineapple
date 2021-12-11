@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.terms__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -413,6 +420,7 @@ body {
 .title {
   font-weight: 600;
   font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -510,7 +518,7 @@ body {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin-bottom: 40px;
   /*   &__pics {
     position: absolute;
       z-index: -1;
@@ -566,6 +574,21 @@ body {
   right: 5%;
 }
 
+.terms__subtitle {
+  max-width: 760px;
+  margin-bottom: 70px;
+}
+.terms__steps {
+  display: flex;
+}
+.terms__divider {
+  width: 2px;
+  height: 230px;
+  background-color: #333333;
+  opacity: 0.1;
+  content: "";
+}
+
 .btn {
   height: 70px;
   padding: 10px 50px;
@@ -593,4 +616,29 @@ body {
   background-color: #f8b02a;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 26%;
+  flex: 1 1 320px;
+  margin: auto;
+}
+.step__icon {
+  margin-bottom: 25px;
+}
+.step__label {
+  background-color: #f8b02a;
+  color: white;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  border-radius: 90px;
+}
+.step__text {
+  font-size: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
