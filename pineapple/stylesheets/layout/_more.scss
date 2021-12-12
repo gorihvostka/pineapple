@@ -1,12 +1,20 @@
-.prizes {
-  @extend %flex-column;
+.more {
   @extend %rectangle;
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 120px;
+  align-items: center;
 
   &__heading {
-    @extend %heading;
+    font-weight: 600;
+    font-size: 40px;
     color: $light-grey;
-    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-size: 50px;
+    margin-bottom: 0;
+    max-width: 830px;
   }
 
   &__subtitle {
@@ -18,9 +26,5 @@
     margin-bottom: 65px;
     justify-content: space-evenly;
     width: 100%;
-  }
-
-  &__el2 {
-    top: 40px;
-  }
+}
 }

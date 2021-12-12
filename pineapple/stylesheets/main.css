@@ -17,6 +17,19 @@
   align-items: center;
 }
 
+.more, .prizes {
+  max-width: 1360px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  margin: 0 auto;
+  background: linear-gradient(141.77deg, #FF9415 0%, #FFC709 100.82%);
+  box-shadow: 20px 20px 80px rgba(248, 175, 42, 0.4);
+  border-radius: 60px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -611,17 +624,7 @@ body {
 }
 
 .prizes {
-  max-width: 1360px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0 auto;
   margin-bottom: 120px;
-  padding-top: 65px;
-  padding-bottom: 65px;
-  background-color: #f8b02a;
-  box-shadow: 20px 20px 80px rgba(248, 175, 42, 0.4);
-  border-radius: 60px;
 }
 .prizes__heading {
   color: white;
@@ -641,7 +644,7 @@ body {
 }
 
 .winners {
-  margin-bottom: 120px;
+  margin-bottom: 130px;
 }
 .winners__heading {
   margin-bottom: 70px;
@@ -655,6 +658,32 @@ body {
   box-sizing: border-box;
   border-radius: 15px;
   margin-bottom: 50px;
+}
+
+.more {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+  align-items: center;
+}
+.more__heading {
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+}
+.more__title {
+  font-size: 50px;
+  margin-bottom: 0;
+  max-width: 830px;
+}
+.more__subtitle {
+  max-width: 760px;
+}
+.more__elements {
+  display: flex;
+  margin-bottom: 65px;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .btn {
