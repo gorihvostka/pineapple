@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.winners, .terms, .first, .wrapper_header {
+.footer, .winners, .terms, .first, .wrapper_header {
   max-width: 66%;
   margin: 0 auto;
 }
@@ -539,7 +539,7 @@ body {
 }
 
 .wrapper_main {
-  margin-bottom: 25px;
+  margin-bottom: 100px;
 }
 
 .first {
@@ -663,7 +663,6 @@ body {
 .more {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 120px;
   align-items: center;
 }
 .more__heading {
@@ -684,6 +683,20 @@ body {
   margin-bottom: 65px;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.footer__rights {
+  display: flex;
+  align-items: center;
+}
+.footer__logo {
+  margin-right: 20px;
 }
 
 .btn {
