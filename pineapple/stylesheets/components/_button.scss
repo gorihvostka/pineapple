@@ -25,4 +25,9 @@
     box-shadow: 10px 10px 30px 0px hsla(39, 94%, 57%, 0.2);
   }
 
+  &_unactive {
+    background-color: transparent;
+    border: none;
+    color: hsla(215, 0%, 58%, 0.2);
+  }
 }

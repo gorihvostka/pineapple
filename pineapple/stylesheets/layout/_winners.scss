@@ -1,0 +1,22 @@
+.winners {
+  @extend %flex-column;
+  @extend %wrapper;
+  margin-bottom: 120px;
+
+  &__heading {
+    @extend %heading;
+    margin-bottom: 70px;
+  }
+
+  &__subtitle {
+    max-width: 760px;
+    margin-bottom: 10px;
+  }
+
+  &__switch {
+    border: 2px solid hsla(215, 0%, 58%, 0.2);
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 50px;
+  }
+}

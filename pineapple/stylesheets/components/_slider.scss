@@ -1,0 +1,53 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    height: 16px;
+    margin: 30px auto 0;
+  }
+
+  &__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $brand-color;
+
+    &_unactive {
+      opacity: 0.2;
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    @extend %flex-column;
+    width: 260px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  &__hidden-label {
+    display: none;
+  }
+
+  &__pic {
+    width: auto;
+    height: 100%;
+  }
+}
