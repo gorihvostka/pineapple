@@ -386,9 +386,13 @@ a {
   color: #949494;
   text-decoration: none;
 }
-a:hover, a:active, a:focus {
+a:hover {
   color: #f8b02a;
   text-decoration: underline;
+}
+a:active {
+  color: #f8b02a;
+  text-decoration: none;
 }
 
 @font-face {
@@ -714,16 +718,36 @@ body {
   color: #333333;
   border: 2px solid white;
 }
+.btn_white:hover {
+  color: #f8b02a;
+}
+.btn_white:active {
+  color: #f8b02a;
+  opacity: 0.95;
+}
 .btn_yellow {
   background-color: #f8b02a;
   color: white;
   border: 2px solid #f8b02a;
   box-shadow: 10px 10px 30px 0px rgba(248, 176, 42, 0.2);
 }
+.btn_yellow:hover {
+  background-color: #f9b639;
+}
+.btn_yellow:active {
+  background-color: #f8ab1b;
+  opacity: 0.95;
+}
 .btn_unactive {
   background-color: transparent;
   border: none;
   color: rgba(148, 148, 148, 0.2);
+}
+.btn_unactive:hover {
+  color: rgba(248, 176, 42, 0.2);
+}
+.btn_unactive:active {
+  color: rgba(248, 176, 42, 0.6);
 }
 
 .logo {

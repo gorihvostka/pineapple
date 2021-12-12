@@ -12,10 +12,19 @@
   line-height: 105%;
   cursor: pointer;
 
-    &_white {
+  &_white {
     background-color: $light-grey;
     color: $text-color;
     border: 2px solid $light-grey;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    &:active {
+      color: $brand-color;
+      opacity: 0.95;
+    }
   }
 
   &_yellow {
@@ -23,11 +32,28 @@
     color: $light-grey;
     border: 2px solid $brand-color;
     box-shadow: 10px 10px 30px 0px hsla(39, 94%, 57%, 0.2);
+
+    &:hover {
+      background-color: lighten($brand-color, $amount: 3%);
+    }
+
+    &:active {
+      background-color: darken($brand-color, $amount: 3%);
+      opacity: 0.95;
+    }
   }
 
   &_unactive {
     background-color: transparent;
     border: none;
     color: hsla(215, 0%, 58%, 0.2);
+
+    &:hover {
+      color: hsla(39, 94%, 57%, 0.2);
+    }
+
+    &:active {
+      color: hsla(39, 94%, 57%, 0.6);
+    }
   }
 }

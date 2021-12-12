@@ -28,8 +28,13 @@ a {
   color: $mid-grey;
   text-decoration: none;
 
-  @include on-event {
+  &:hover {
     color: $brand-color;
     text-decoration: underline;
+  }
+
+    &:active {
+    color: $brand-color;
+    text-decoration: none;
   }
 }
