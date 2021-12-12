@@ -1,0 +1,40 @@
+.prize {
+  position: relative;
+
+  &__pic {
+    max-width: 360px;
+    max-height: 360px;
+
+    &_1 {
+      transform: rotate(-15deg);
+    }
+
+    &_3 {
+      transform: rotate(-15deg);
+    }
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 50px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  &__name {
+    width: fit-content;
+    height: fit-content;
+    padding: 18px 25px;
+    background: $light-grey;
+    border-radius: 15px 15px 15px 0px;
+  }
+
+  &__number {
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 18px 13px;
+    background: $dark-grey;
+    border-radius: 0px 0px 15px 15px;
+    color: $light-grey;
+  }
+}

@@ -1,9 +1,20 @@
 @charset "UTF-8";
-.terms__heading {
+.prizes__heading, .terms__heading {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.terms, .first, .wrapper_header {
+  max-width: 66%;
+  margin: 0 auto;
+}
+
+.prizes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -439,7 +450,7 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1200px;
+  max-width: 94.6%;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -485,6 +496,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex: 1 1 1200px;
+  margin: 0 auto;
 }
 
 .wrapper_header {
@@ -511,6 +523,10 @@ body {
   font-weight: 600;
   font-size: 25px;
   line-height: 105%;
+}
+
+.wrapper_main {
+  margin-bottom: 25px;
 }
 
 .first {
@@ -574,9 +590,14 @@ body {
   right: 5%;
 }
 
+.terms {
+  margin-bottom: 130px;
+}
+.terms__heading {
+  margin-bottom: 70px;
+}
 .terms__subtitle {
   max-width: 760px;
-  margin-bottom: 70px;
 }
 .terms__steps {
   display: flex;
@@ -587,6 +608,36 @@ body {
   background-color: #333333;
   opacity: 0.1;
   content: "";
+}
+
+.prizes {
+  max-width: 1360px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 130px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: #f8b02a;
+  box-shadow: 20px 20px 80px rgba(248, 175, 42, 0.4);
+  border-radius: 60px;
+}
+.prizes__heading {
+  color: white;
+  margin-bottom: 50px;
+}
+.prizes__subtitle {
+  max-width: 760px;
+}
+.prizes__elements {
+  display: flex;
+  margin-bottom: 65px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.prizes__el2 {
+  top: 40px;
 }
 
 .btn {
@@ -608,6 +659,7 @@ body {
   background-color: #f8b02a;
   color: white;
   border: 2px solid #f8b02a;
+  box-shadow: 10px 10px 30px 0px rgba(248, 176, 42, 0.2);
 }
 
 .logo {
@@ -641,4 +693,47 @@ body {
 .step__text {
   font-size: 20px;
   font-weight: 600;
+}
+
+.prize {
+  position: relative;
+}
+.prize__pic {
+  max-width: 360px;
+  max-height: 360px;
+}
+.prize__pic_1 {
+  transform: rotate(-15deg);
+}
+.prize__pic_3 {
+  transform: rotate(-15deg);
+}
+.prize__label {
+  position: absolute;
+  bottom: 50px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.prize__name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 18px 25px;
+  background: white;
+  border-radius: 15px 15px 15px 0px;
+}
+.prize__number {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 12px 18px 13px;
+  background: #333333;
+  border-radius: 0px 0px 15px 15px;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

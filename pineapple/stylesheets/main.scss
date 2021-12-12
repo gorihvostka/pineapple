@@ -22,15 +22,18 @@
 @import
   'layout/header',
   'layout/navbar',
+  'layout/main',
   'layout/first',
   'layout/terms',
+  'layout/prizes',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
   'components/logo',
-  'components/step';
+  'components/step',
+  'components/prize';
 
 // 6. Page-specific styles
 @import

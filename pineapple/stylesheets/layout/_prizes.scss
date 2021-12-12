@@ -1,0 +1,33 @@
+.prizes {
+  @extend %flex-column;
+  max-width: 1360px;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 130px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: #f8b02a;
+  box-shadow: 20px 20px 80px rgb(248 175 42 / 40%);
+  border-radius: 60px;
+
+  &__heading {
+    @extend %heading;
+    color: $light-grey;
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    max-width: 760px;
+  }
+
+  &__elements {
+    display: flex;
+    margin-bottom: 65px;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  &__el2 {
+    top: 40px;
+  }
+}

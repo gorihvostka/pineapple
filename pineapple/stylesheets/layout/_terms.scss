@@ -1,11 +1,14 @@
 .terms {
+  @extend %wrapper;
+  margin-bottom: 130px;
+
   &__heading {
     @extend %heading;
+    margin-bottom: 70px;
   }
 
   &__subtitle {
     max-width: 760px;
-    margin-bottom: 70px;
   }
 
   &__steps {
@@ -13,10 +16,10 @@
   }
 
   &__divider {
-width: 2px;
-height: 230px;
-background-color: $dark-grey;
-opacity: 0.1;
-content: '';
+    width: 2px;
+    height: 230px;
+    background-color: $dark-grey;
+    opacity: 0.1;
+    content: '';
   }
 }
