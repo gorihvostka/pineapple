@@ -431,6 +431,25 @@ a:active {
   font-weight: 900;
   font-style: normal;
 }
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f1f2f4;
+  background-image: url(/assets/images/vector-backgr-cut.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 43%;
+}
+@media screen and (min-width: 2200px) {
+  .container {
+    background-image: url(/assets/images/vector-backgr.svg);
+    background-size: 50%;
+  }
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -458,18 +477,6 @@ body {
 
 .accent {
   color: #f8b02a;
-}
-
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #f1f2f4;
-  background-image: url(/assets/images/vector-backgr-cut.svg);
-  background-position: top right;
-  background-repeat: no-repeat;
 }
 
 /**
@@ -511,6 +518,11 @@ body {
   padding-top: 35px;
   margin-bottom: 25px;
 }
+@media screen and (min-width: 2200px) {
+  .wrapper_header {
+    max-width: 2100px;
+  }
+}
 
 .navbar {
   display: flex;
@@ -536,6 +548,12 @@ body {
 .wrapper_main {
   margin-bottom: 100px;
 }
+@media screen and (min-width: 2200px) {
+  .wrapper_main {
+    max-width: 2100px;
+    margin: 0 auto 100px;
+  }
+}
 
 .first {
   display: flex;
@@ -544,15 +562,21 @@ body {
   align-items: center;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 2200px) {
+  .first {
+    max-width: 70%;
+  }
+}
 .first__texts {
   max-width: 665px;
 }
 .first__title {
   margin-bottom: 30px;
+  position: relative;
 }
 .first__title::after {
   position: absolute;
-  bottom: 50px;
+  top: 80px;
   left: -15px;
   width: 300px;
   height: 450px;
@@ -588,6 +612,9 @@ body {
   bottom: 15%;
   right: 5%;
 }
+.first__pics {
+  position: relative;
+}
 .first__pics::before {
   position: absolute;
   top: 370px;
@@ -600,9 +627,19 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 2200px) {
+  .first__pics::before {
+    mix-blend-mode: overlay;
+  }
+}
 
 .terms {
   margin-bottom: 130px;
+}
+@media screen and (min-width: 2200px) {
+  .terms {
+    max-width: 70%;
+  }
 }
 .terms__heading {
   margin-bottom: 70px;
@@ -623,23 +660,29 @@ body {
 
 .prizes {
   margin-bottom: 120px;
+  position: relative;
 }
-.prizes__heading {
-  color: white;
-  margin-bottom: 50px;
+@media screen and (min-width: 2200px) {
+  .prizes {
+    max-width: 80%;
+  }
 }
-.prizes__heading::after {
+.prizes.prizes::before {
   position: absolute;
   z-index: 2;
-  top: 1430px;
-  right: 500px;
-  width: 214px;
+  top: -40px;
+  right: 220px;
+  width: 220px;
   height: 130px;
   content: "";
   transform: rotate(-80deg);
   background-image: url(/assets/images/doodle-arrow1.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+.prizes__heading {
+  color: white;
+  margin-bottom: 50px;
 }
 .prizes__subtitle {
   max-width: 760px;
@@ -653,8 +696,8 @@ body {
 .prizes__elements::after {
   position: absolute;
   z-index: 2;
-  bottom: -1370px;
-  left: 500px;
+  bottom: -70px;
+  left: 200px;
   width: 234px;
   height: 195px;
   content: "";
@@ -667,16 +710,23 @@ body {
 }
 
 .winners {
+  max-width: 63%;
   margin-bottom: 130px;
+}
+@media screen and (min-width: 2200px) {
+  .winners {
+    max-width: 84.5%;
+  }
 }
 .winners__heading {
   margin-bottom: 70px;
+  position: relative;
 }
 .winners__heading::after {
   position: absolute;
   z-index: 2;
-  bottom: -1520px;
-  right: 600px;
+  bottom: 30px;
+  right: -40px;
   width: 130px;
   height: 190px;
   content: "";
@@ -697,16 +747,20 @@ body {
 
 .more {
   display: flex;
+  position: relative;
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (min-width: 2200px) {
+  .more {
+    max-width: 80%;
+  }
+}
 .more::after {
   position: absolute;
-  z-index: -1;
-  bottom: -2640px;
-  right: 1500px;
-  width: 210px;
-  height: 446px;
+  left: -80px;
+  width: 170px;
+  height: 400px;
   content: "";
   background-image: url(/assets/images/doodle-vortex.png);
   background-size: contain;
@@ -737,6 +791,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 2200px) {
+  .footer {
+    max-width: 80%;
+  }
 }
 .footer__rights {
   display: flex;
@@ -822,6 +881,11 @@ body {
   height: 16px;
   margin: 30px auto 0;
 }
+@media screen and (min-width: 2200px) {
+  .slider__dots {
+    width: 60px;
+  }
+}
 .slider__dot {
   width: 16px;
   height: 16px;
@@ -831,6 +895,11 @@ body {
 .slider__dot_unactive {
   opacity: 0.2;
   cursor: pointer;
+}
+@media screen and (min-width: 2200px) {
+  .slider__dot:last-child {
+    display: none;
+  }
 }
 .slider__item {
   width: 260px;

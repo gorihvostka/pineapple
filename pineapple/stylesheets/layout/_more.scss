@@ -1,16 +1,19 @@
 .more {
   @extend %rectangle;
   display: flex;
+  position: relative;
   justify-content: space-around;
   align-items: center;
 
+  @include huge {
+    max-width: 80%;
+  }
+
   &::after {
     position: absolute;
-    z-index: -1;
-    bottom: -2640px;
-    right: 1500px;
-    width: 210px;
-    height: 446px;
+    left: -80px;
+    width: 170px;
+    height: 400px;
     content: "";
     background-image: url(/assets/images/doodle-vortex.png);
     background-size: contain;

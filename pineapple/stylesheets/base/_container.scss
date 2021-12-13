@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $backgr-color;
+  background-image: url(/assets/images/vector-backgr-cut.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 43%;
+
+  @include huge {
+    background-image: url(/assets/images/vector-backgr.svg);
+    background-size: 50%;
+  }
+}

@@ -1,25 +1,31 @@
 .winners {
   @extend %flex-column;
   @extend %wrapper;
+  max-width: 63%;
   margin-bottom: 130px;
+
+  @include huge {
+    max-width: 84.5%;
+  }
 
   &__heading {
     @extend %heading;
     margin-bottom: 70px;
+    position: relative;
   }
 
-    &__heading::after {
+  &__heading::after {
     position: absolute;
     z-index: 2;
-    bottom: -1520px;
-    right: 600px;
+    bottom: 30px;
+    right: -40px;
     width: 130px;
     height: 190px;
     content: "";
     background-image: url(/assets/images/doodle-crown.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
+  }
 
   &__subtitle {
     max-width: 760px;
