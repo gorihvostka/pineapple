@@ -1,10 +1,10 @@
 .first {
-    @extend %wrapper;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
+  @extend %wrapper;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 
   &__texts {
     max-width: 665px;
@@ -12,6 +12,19 @@
 
   &__title {
     margin-bottom: 30px;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      bottom: 50px;
+      left: 0px;
+      width: 290px;
+      height: 450px;
+      content: "";
+      background-image: url(/assets/images/doodle-line4.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__subtitle {
@@ -56,17 +69,17 @@
     right: 5%;
   }
 
-/*   &__pics {
-  position: absolute;
+  &__pics::before {
+    position: absolute;
     z-index: -1;
-    width: 822px;
-    height: 1047px;
-    left: 815px;
-    top: -136px;
-    overflow: hidden;
-    background-image: url(/assets/images/vector-backgr-cut.svg);
+    top: 370px;
+    left: 660px;
+    width: 350px;
+    height: 331px;
+    content: "";
+    transform: rotate(-10deg);
+    background-image: url(/assets/images/doodle-oils.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100% auto;
-  } */
+  }
 }

@@ -552,25 +552,24 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  /*   &__pics {
-    position: absolute;
-      z-index: -1;
-      width: 822px;
-      height: 1047px;
-      left: 815px;
-      top: -136px;
-      overflow: hidden;
-      background-image: url(/assets/images/vector-backgr-cut.svg);
-      background-repeat: no-repeat;
-      background-position: top right;
-      background-size: 100% auto;
-    } */
 }
 .first__texts {
   max-width: 665px;
 }
 .first__title {
   margin-bottom: 30px;
+}
+.first__title::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 50px;
+  left: 0px;
+  width: 290px;
+  height: 450px;
+  content: "";
+  background-image: url(/assets/images/doodle-line4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .first__subtitle {
   margin-bottom: 60px;
@@ -606,6 +605,19 @@ body {
   bottom: 15%;
   right: 5%;
 }
+.first__pics::before {
+  position: absolute;
+  z-index: -1;
+  top: 370px;
+  left: 660px;
+  width: 350px;
+  height: 331px;
+  content: "";
+  transform: rotate(-10deg);
+  background-image: url(/assets/images/doodle-oils.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .terms {
   margin-bottom: 130px;
@@ -634,6 +646,19 @@ body {
   color: white;
   margin-bottom: 50px;
 }
+.prizes__heading::after {
+  position: absolute;
+  z-index: 2;
+  top: 1430px;
+  right: 500px;
+  width: 214px;
+  height: 130px;
+  content: "";
+  transform: rotate(-80deg);
+  background-image: url(/assets/images/doodle-arrow1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .prizes__subtitle {
   max-width: 760px;
 }
@@ -642,6 +667,18 @@ body {
   margin-bottom: 65px;
   justify-content: space-evenly;
   width: 100%;
+}
+.prizes__elements::after {
+  position: absolute;
+  z-index: 2;
+  bottom: -1370px;
+  left: 500px;
+  width: 234px;
+  height: 195px;
+  content: "";
+  background-image: url(/assets/images/doodle-circles.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .prizes__el2 {
   top: 40px;
@@ -652,6 +689,18 @@ body {
 }
 .winners__heading {
   margin-bottom: 70px;
+}
+.winners__heading::after {
+  position: absolute;
+  z-index: 2;
+  bottom: -1520px;
+  right: 600px;
+  width: 130px;
+  height: 190px;
+  content: "";
+  background-image: url(/assets/images/doodle-crown.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .winners__subtitle {
   max-width: 760px;
@@ -668,6 +717,18 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.more::after {
+  position: absolute;
+  z-index: -1;
+  bottom: -2640px;
+  right: 1500px;
+  width: 210px;
+  height: 446px;
+  content: "";
+  background-image: url(/assets/images/doodle-vortex.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .more__heading {
   font-weight: 600;

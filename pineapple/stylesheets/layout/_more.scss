@@ -4,6 +4,19 @@
   justify-content: space-around;
   align-items: center;
 
+  &::after {
+    position: absolute;
+    z-index: -1;
+    bottom: -2640px;
+    right: 1500px;
+    width: 210px;
+    height: 446px;
+    content: "";
+    background-image: url(/assets/images/doodle-vortex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
   &__heading {
     font-weight: 600;
     font-size: 40px;

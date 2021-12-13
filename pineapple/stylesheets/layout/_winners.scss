@@ -8,6 +8,19 @@
     margin-bottom: 70px;
   }
 
+    &__heading::after {
+    position: absolute;
+    z-index: 2;
+    bottom: -1520px;
+    right: 600px;
+    width: 130px;
+    height: 190px;
+    content: "";
+    background-image: url(/assets/images/doodle-crown.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
   &__subtitle {
     max-width: 760px;
     margin-bottom: 10px;
