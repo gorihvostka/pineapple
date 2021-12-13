@@ -15,10 +15,9 @@
 
     &::after {
       position: absolute;
-      z-index: -1;
       bottom: 50px;
-      left: 0px;
-      width: 290px;
+      left: -15px;
+      width: 300px;
       height: 450px;
       content: "";
       background-image: url(/assets/images/doodle-line4.png);
@@ -46,36 +45,27 @@
 
   &__cake {
     position: relative;
+    z-index: 1;
     left: 25%;
-  }
-
-  &__vector {
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    left: -455px;
   }
 
   &__pineapple {
     position: absolute;
-    z-index: -1;
-    right: -30%;
+    right: -330px;
   }
 
   &__slice {
     position: absolute;
-    z-index: -1;
     bottom: 15%;
     right: 5%;
   }
 
   &__pics::before {
     position: absolute;
-    z-index: -1;
     top: 370px;
-    left: 660px;
+    right: 175px;
     width: 350px;
-    height: 331px;
+    height: 330px;
     content: "";
     transform: rotate(-10deg);
     background-image: url(/assets/images/doodle-oils.png);
