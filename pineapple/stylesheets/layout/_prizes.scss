@@ -8,6 +8,13 @@
     max-width: 80%;
   }
 
+  @include medium {
+    max-width: 95%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 100px;
+  }
+
   &::before {
     position: absolute;
     z-index: 2;
@@ -21,9 +28,16 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-      @include medium-plus {
-        right: 150px;
-      }
+    @include medium-plus {
+      right: 150px;
+    }
+
+    @include medium {
+      top: -60px;
+      right: 50px;
+      width: 200px;
+      height: 100px;
+    }
   }
 
   &__heading {
@@ -41,6 +55,10 @@
     margin-bottom: 65px;
     justify-content: space-evenly;
     width: 100%;
+
+    @include medium {
+      width: 95%;
+    }
   }
 
   &__elements::after {
@@ -54,6 +72,13 @@
     background-image: url(/assets/images/doodle-circles.png);
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include medium {
+      bottom: -100px;
+      left: 50px;
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &__el2 {

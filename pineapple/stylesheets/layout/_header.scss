@@ -23,4 +23,8 @@
         padding-top: 20px;
         margin-bottom: 10px;
     }
+
+    @include medium {
+        max-width: 80%;
+    }
 }

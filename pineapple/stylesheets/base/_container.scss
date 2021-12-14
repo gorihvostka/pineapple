@@ -14,4 +14,9 @@
     background-image: url(/assets/images/vector-backgr.svg);
     background-size: 50%;
   }
+
+  @include medium {
+    background-size: 45% 13%;
+    background-image: url(/assets/images/vector-backgr-cut.svg);
+  }
 }

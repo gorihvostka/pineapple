@@ -10,8 +10,17 @@
     max-width: 70%;
   }
 
+  @include medium {
+    max-width: 70%;
+  }
+
   &__texts {
     max-width: 665px;
+    z-index: 1;
+
+    @include medium {
+      max-width: 60%;
+    }
   }
 
   &__title {
@@ -34,6 +43,10 @@
         left: -25px;
         width: 270px;
       }
+
+      @include medium {
+        display: none;
+      }
     }
   }
 
@@ -48,6 +61,10 @@
 
   &__link {
     font-size: 25px;
+
+    @include medium {
+      font-size: 18px;
+    }
   }
 
   &__backgr {
@@ -62,6 +79,10 @@
     @include medium-plus {
       height: 70vh;
     }
+
+    @include medium {
+      height: 50vh;
+    }
   }
 
   &__pineapple {
@@ -74,6 +95,12 @@
 
     @include medium-plus {
       max-width: 100%;
+    }
+
+    @include medium {
+      height: 45%;
+      left: 74%;
+      top: 0;
     }
   }
 
@@ -89,13 +116,22 @@
     @include medium-plus {
       max-width: 100%;
     }
+
+    @include medium {
+      height: 35%;
+    }
   }
 
   &__pics {
     position: relative;
 
+    @include medium {
+      max-width: 45%;
+    }
+
     &::before {
       position: absolute;
+      z-index: 0;
       top: 370px;
       right: 175px;
       width: 350px;
@@ -117,6 +153,14 @@
 
       @include medium-plus {
         display: none;
+      }
+
+      @include medium {
+        top: 125px;
+        right: 15px;
+        width: 250px;
+        height: 230px;
+        transform: rotate(0deg);
       }
     }
   }

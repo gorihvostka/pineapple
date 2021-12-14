@@ -9,13 +9,23 @@
   align-items: center;
   padding-bottom: 30px;
 
-    @include huge {
-      max-width: 80%;
-    }
+  @include huge {
+    max-width: 80%;
+  }
+
+  @include medium {
+    padding-bottom: 0;
+  }
 
   &__rights {
     display: flex;
     align-items: center;
+  }
+
+  &__credits {
+    @include medium {
+      text-align: end;
+    }
   }
 
   &__logo {

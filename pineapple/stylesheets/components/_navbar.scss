@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-    align-items: center;
-    flex: 0 1 600px;
+  align-items: center;
+  flex: 0 1 600px;
 
   &__navigation {
     display: flex;
@@ -15,6 +15,10 @@
     @include medium-plus {
       justify-content: space-evenly;
     }
+
+    @include medium {
+      justify-content: space-evenly;
+    }
   }
 
   &__link {
@@ -22,5 +26,9 @@
     font-weight: 600;
     font-size: 25px;
     line-height: 105%;
+
+    @include medium {
+      font-size: 20px;
+    }
   }
 }

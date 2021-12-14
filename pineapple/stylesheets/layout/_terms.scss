@@ -2,8 +2,13 @@
   @extend %wrapper;
   margin-bottom: 130px;
 
-    @include huge {
+  @include huge {
     max-width: 70%;
+  }
+
+  @include medium {
+    max-width: 74%;
+    margin-bottom: 50px;
   }
 
   &__heading {

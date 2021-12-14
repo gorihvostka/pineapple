@@ -5,4 +5,10 @@
   border-radius: 50%;
   cursor: pointer;
   flex: 0 0 100px;
+
+  @include medium {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+  }
 }

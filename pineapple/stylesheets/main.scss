@@ -23,7 +23,6 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/navbar',
   'layout/main',
   'layout/first',
   'layout/terms',
@@ -36,6 +35,7 @@
 @import
   'components/button',
   'components/logo',
+  'components/navbar',
   'components/slider',
   'components/step',
   'components/prize';

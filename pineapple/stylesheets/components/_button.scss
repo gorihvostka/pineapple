@@ -16,6 +16,12 @@
     padding: 10px 30px;
   }
 
+  @include medium {
+    padding: 10px 15px;
+    height: 60px;
+    font-size: 20px;
+  }
+
   &_white {
     background-color: $light-grey;
     color: $text-color;

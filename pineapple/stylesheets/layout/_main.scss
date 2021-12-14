@@ -5,4 +5,8 @@
     max-width: 2100px;
     margin: 0 auto 100px;
   }
+
+  @include medium {
+    margin-bottom: 50px;
+  }
 }

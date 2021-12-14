@@ -10,6 +10,11 @@
       max-height: 300px;
     }
 
+    @include medium {
+      max-width: 220px;
+      max-height: 220px;
+    }
+
     &_1 {
       transform: rotate(-15deg);
     }
@@ -34,6 +39,13 @@
 
     @include medium-plus {
       font-size: 23px;
+    }
+
+    @include medium {
+      position: relative;
+      bottom: 25px;
+      font-weight: 500;
+      font-size: 18px;
     }
   }
 
