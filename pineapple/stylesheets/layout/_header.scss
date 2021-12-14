@@ -3,19 +3,24 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1 1 1200px;
-  margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 1200px;
+    margin: 0 auto;
 }
 
 .wrapper_header {
-  @extend %wrapper;
-  padding-top: 35px;
-  margin-bottom: 25px;
+    @extend %wrapper;
+    padding-top: 35px;
+    margin-bottom: 25px;
 
-  @include huge {
-    max-width: 2100px;
-  }
+    @include huge {
+        max-width: 2100px;
+    }
+
+    @include medium-plus {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
 }

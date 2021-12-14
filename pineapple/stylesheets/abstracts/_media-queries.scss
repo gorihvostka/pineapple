@@ -4,6 +4,20 @@
   }
 }
 
+// default resolution is 1920px
+
+@mixin big {
+  @media screen and (min-width: 1401px) and (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin medium-plus {
+  @media screen and (min-width: 1201px) and (max-width: 1400px) {
+    @content;
+  }
+}
+
 @mixin medium {
   @media screen and (min-width: 841px) and (max-width: 1200px) {
     @content;

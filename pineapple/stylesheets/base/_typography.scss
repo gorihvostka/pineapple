@@ -11,17 +11,29 @@ body {
 .main-title {
 font-weight: 700;
 font-size: 80px;
+
+  @include medium-plus {
+    font-size: 64px;
+  }
 }
 
 .title {
 font-weight: 600;
 font-size: 60px;
 margin-bottom: 20px;
+
+  @include medium-plus {
+    font-size: 50px;
+  }
 }
 
 .subtitle {
 font-weight: 600;
 font-size: 25px;
+
+  @include medium-plus {
+    font-size: 23px;
+  }
 }
 
 .accent {

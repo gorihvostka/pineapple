@@ -12,6 +12,10 @@
   line-height: 105%;
   cursor: pointer;
 
+  @include medium-plus {
+    padding: 10px 30px;
+  }
+
   &_white {
     background-color: $light-grey;
     color: $text-color;

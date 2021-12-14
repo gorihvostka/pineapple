@@ -5,8 +5,20 @@
     max-width: 360px;
     max-height: 360px;
 
+    @include medium-plus {
+      max-width: 300px;
+      max-height: 300px;
+    }
+
     &_1 {
       transform: rotate(-15deg);
+    }
+
+    &_2 {
+      @include medium-plus {
+        position: relative;
+        bottom: 80px;
+      }
     }
 
     &_3 {
@@ -19,6 +31,10 @@
     bottom: 50px;
     font-weight: 600;
     font-size: 30px;
+
+    @include medium-plus {
+      font-size: 23px;
+    }
   }
 
   &__name {

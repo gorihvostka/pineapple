@@ -8,7 +8,7 @@
     max-width: 80%;
   }
 
-  &.prizes::before {
+  &::before {
     position: absolute;
     z-index: 2;
     top: -40px;
@@ -20,6 +20,10 @@
     background-image: url(/assets/images/doodle-arrow1.png);
     background-size: contain;
     background-repeat: no-repeat;
+
+      @include medium-plus {
+        right: 150px;
+      }
   }
 
   &__heading {
@@ -54,5 +58,9 @@
 
   &__el2 {
     top: 40px;
+
+    @include medium-plus {
+      top: 80px;
+    }
   }
 }

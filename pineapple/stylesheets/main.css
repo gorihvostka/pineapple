@@ -463,16 +463,31 @@ body {
   font-weight: 700;
   font-size: 80px;
 }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .main-title {
+    font-size: 64px;
+  }
+}
 
 .title {
   font-weight: 600;
   font-size: 60px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .title {
+    font-size: 50px;
+  }
+}
 
 .subtitle {
   font-weight: 600;
   font-size: 25px;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .subtitle {
+    font-size: 23px;
+  }
 }
 
 .accent {
@@ -523,6 +538,12 @@ body {
     max-width: 2100px;
   }
 }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .wrapper_header {
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+}
 
 .navbar {
   display: flex;
@@ -537,6 +558,11 @@ body {
   align-items: center;
   max-width: 435px;
   flex: 0 1 435px;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .navbar__navigation {
+    justify-content: space-evenly;
+  }
 }
 .navbar__link {
   color: #333333;
@@ -585,6 +611,13 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .first__title::after {
+    top: 60px;
+    left: -25px;
+    width: 270px;
+  }
+}
 .first__subtitle {
   margin-bottom: 60px;
   max-width: 535px;
@@ -603,14 +636,39 @@ body {
   z-index: 1;
   left: 25%;
 }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .first__cake {
+    height: 70vh;
+  }
+}
 .first__pineapple {
   position: absolute;
   left: 58%;
+}
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
+  .first__pineapple {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .first__pineapple {
+    max-width: 100%;
+  }
 }
 .first__slice {
   position: absolute;
   bottom: 15%;
   right: 5%;
+}
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
+  .first__slice {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .first__slice {
+    max-width: 100%;
+  }
 }
 .first__pics {
   position: relative;
@@ -630,6 +688,17 @@ body {
 @media screen and (min-width: 2200px) {
   .first__pics::before {
     mix-blend-mode: overlay;
+  }
+}
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
+  .first__pics::before {
+    top: 400px;
+    right: 50px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .first__pics::before {
+    display: none;
   }
 }
 
@@ -667,7 +736,7 @@ body {
     max-width: 80%;
   }
 }
-.prizes.prizes::before {
+.prizes::before {
   position: absolute;
   z-index: 2;
   top: -40px;
@@ -679,6 +748,11 @@ body {
   background-image: url(/assets/images/doodle-arrow1.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .prizes::before {
+    right: 150px;
+  }
 }
 .prizes__heading {
   color: white;
@@ -707,6 +781,11 @@ body {
 }
 .prizes__el2 {
   top: 40px;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .prizes__el2 {
+    top: 80px;
+  }
 }
 
 .winners {
@@ -756,6 +835,11 @@ body {
     max-width: 80%;
   }
 }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .more {
+    justify-content: space-evenly;
+  }
+}
 .more::before {
   position: absolute;
   left: -80px;
@@ -765,6 +849,12 @@ body {
   background-image: url(/assets/images/doodle-vortex.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .more::before {
+    left: -30px;
+    top: -80px;
+  }
 }
 .more::after {
   content: "";
@@ -786,6 +876,12 @@ body {
   font-size: 50px;
   margin-bottom: 0;
   max-width: 830px;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .more__title {
+    font-size: 40px;
+    max-width: 700px;
+  }
 }
 .more__subtitle {
   max-width: 760px;
@@ -828,6 +924,11 @@ body {
   font-size: 25px;
   line-height: 105%;
   cursor: pointer;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .btn {
+    padding: 10px 30px;
+  }
 }
 .btn_white {
   background-color: white;
@@ -872,6 +973,7 @@ body {
   background-color: #f8b02a;
   border-radius: 50%;
   cursor: pointer;
+  flex: 0 0 100px;
 }
 
 .slider {
@@ -962,8 +1064,20 @@ body {
   max-width: 360px;
   max-height: 360px;
 }
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .prize__pic {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
 .prize__pic_1 {
   transform: rotate(-15deg);
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .prize__pic_2 {
+    position: relative;
+    bottom: 80px;
+  }
 }
 .prize__pic_3 {
   transform: rotate(-15deg);
@@ -973,6 +1087,11 @@ body {
   bottom: 50px;
   font-weight: 600;
   font-size: 30px;
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .prize__label {
+    font-size: 23px;
+  }
 }
 .prize__name {
   width: -webkit-fit-content;

@@ -11,6 +11,10 @@
     align-items: center;
     max-width: 435px;
     flex: 0 1 435px;
+
+    @include medium-plus {
+      justify-content: space-evenly;
+    }
   }
 
   &__link {
