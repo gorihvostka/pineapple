@@ -56,7 +56,7 @@
 
   &__pineapple {
     position: absolute;
-    right: -330px;
+    left: 58%;
   }
 
   &__slice {
@@ -80,9 +80,9 @@
       background-size: contain;
       background-repeat: no-repeat;
 
-        @include huge {
-          mix-blend-mode: overlay;
-        }
+      @include huge {
+        mix-blend-mode: overlay;
+      }
     }
   }
 }

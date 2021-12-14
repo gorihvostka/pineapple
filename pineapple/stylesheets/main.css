@@ -605,7 +605,7 @@ body {
 }
 .first__pineapple {
   position: absolute;
-  right: -330px;
+  left: 58%;
 }
 .first__slice {
   position: absolute;
@@ -756,7 +756,7 @@ body {
     max-width: 80%;
   }
 }
-.more::after {
+.more::before {
   position: absolute;
   left: -80px;
   width: 170px;
@@ -766,10 +766,21 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(141.77deg, #FF9415 0%, #FFC709 100.82%);
+  border-radius: 60px;
+}
 .more__heading {
   font-weight: 600;
   font-size: 40px;
   color: white;
+  z-index: 1;
 }
 .more__title {
   font-size: 50px;
@@ -778,6 +789,9 @@ body {
 }
 .more__subtitle {
   max-width: 760px;
+}
+.more__btn {
+  z-index: 1;
 }
 .more__elements {
   display: flex;

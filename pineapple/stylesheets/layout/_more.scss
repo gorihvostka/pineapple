@@ -9,7 +9,7 @@
     max-width: 80%;
   }
 
-  &::after {
+  &::before {
     position: absolute;
     left: -80px;
     width: 170px;
@@ -18,12 +18,24 @@
     background-image: url(/assets/images/doodle-vortex.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(141.77deg, #FF9415 0%, #FFC709 100.82%);
+    border-radius: 60px;
+  }
 
   &__heading {
     font-weight: 600;
     font-size: 40px;
-    color: $light-grey;
+    color: white;
+    z-index: 1;
   }
 
   &__title {
@@ -36,10 +48,14 @@
     max-width: 760px;
   }
 
+  &__btn {
+    z-index: 1;
+  }
+
   &__elements {
     display: flex;
     margin-bottom: 65px;
     justify-content: space-evenly;
     width: 100%;
-}
+  }
 }
