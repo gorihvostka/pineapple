@@ -15,11 +15,24 @@
   }
 
   &__texts {
+    position: relative;
     max-width: 665px;
     z-index: 1;
 
     @include medium {
       max-width: 60%;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: -500px;
+      left: -380px;
+      width: 230px;
+      height: 450px;
+      content: "";
+      background-image: url(/assets/images/doodle-oils_triangles.png);
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 
