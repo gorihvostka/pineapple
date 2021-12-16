@@ -31,10 +31,18 @@ a {
   &:hover {
     color: $brand-color;
     text-decoration: underline;
+
+    @include micro {
+      color: $light-grey;
+    }
   }
 
-    &:active {
+  &:active {
     color: $brand-color;
     text-decoration: none;
+
+    @include micro {
+      color: $light-grey;
+    }
   }
 }

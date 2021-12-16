@@ -23,6 +23,13 @@
     @include mini {
       justify-content: space-evenly;
     }
+
+    @include micro {
+      justify-content: space-around;
+      flex: 0 1 200px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__link {
@@ -37,6 +44,11 @@
 
     @include mini {
       font-size: 20px;
+    }
+
+    @include micro {
+      font-size: 14px;
+      color: $light-grey;
     }
   }
 }

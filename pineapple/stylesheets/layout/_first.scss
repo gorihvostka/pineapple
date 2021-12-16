@@ -20,6 +20,14 @@
     margin-bottom: 30px;
   }
 
+  @include micro {
+    max-width: 100%;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
   &__texts {
     position: relative;
     max-width: 665px;
@@ -36,6 +44,16 @@
       text-align: center;
     }
 
+    @include micro {
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+      flex: 1 1 250px;
+    }
+
     &::before {
       position: absolute;
       bottom: -500px;
@@ -50,12 +68,25 @@
       @include mini {
         display: none;
       }
+
+      @include micro {
+        bottom: -200px;
+        left: -70px;
+        width: 20vw;
+        height: 200px;
+        content: "";
+        background-image: url(/assets/images/doodle-oils_triangles.png);
+      }
     }
   }
 
   &__title {
     margin-bottom: 30px;
     position: relative;
+
+    @include micro {
+      margin-bottom: 24px;
+    }
 
     &::after {
       position: absolute;
@@ -81,6 +112,10 @@
       @include mini {
         display: none;
       }
+
+      @include micro {
+        display: none;
+      }
     }
   }
 
@@ -94,6 +129,10 @@
       margin-right: auto;
       margin-left: auto;
     }
+
+    @include micro {
+      margin-bottom: 20px;
+    }
   }
 
   &__btn {
@@ -102,6 +141,10 @@
     @include mini {
       margin-bottom: 15px;
       margin-left: 10%;
+    }
+
+    @include micro {
+      margin-right: 0;
     }
   }
 
@@ -116,78 +159,9 @@
       font-size: 18px;
       margin-left: 11%;
     }
-  }
 
-  &__backgr {
-    position: relative;
-  }
-
-  &__cake {
-    position: relative;
-    z-index: 1;
-    left: 25%;
-
-    @include medium-plus {
-      height: 70vh;
-    }
-
-    @include medium {
-      height: 50vh;
-    }
-
-    @include mini {
-      height: 50vh;
-      top: -120px;
-      left: 50%;
-    }
-  }
-
-  &__pineapple {
-    position: absolute;
-    left: 58%;
-
-    @include big {
-      max-width: 100%;
-    }
-
-    @include medium-plus {
-      max-width: 100%;
-    }
-
-    @include medium {
-      height: 45%;
-      left: 74%;
-      top: 0;
-    }
-
-    @include mini {
-      height: 46%;
-      left: 98%;
-      top: -150px;
-    }
-  }
-
-  &__slice {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-
-    @include big {
-      max-width: 100%;
-    }
-
-    @include medium-plus {
-      max-width: 100%;
-    }
-
-    @include medium {
-      height: 35%;
-    }
-
-    @include mini {
-      height: 35%;
-      bottom: 50%;
-      right: 0%;
+    @include micro {
+      display: none;
     }
   }
 
@@ -244,6 +218,99 @@
         height: 230px;
         transform: rotate(-20deg);
       }
+
+      @include micro {
+        top: 20px;
+        right: -30px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__cake {
+    position: relative;
+    z-index: 1;
+    left: 25%;
+
+    @include medium-plus {
+      height: 70vh;
+    }
+
+    @include medium {
+      height: 50vh;
+    }
+
+    @include mini {
+      height: 50vh;
+      top: -120px;
+      left: 50%;
+    }
+
+    @include micro {
+      left: 5%;
+      height: 40vh;
+    }
+  }
+
+  &__pineapple {
+    position: absolute;
+    left: 58%;
+
+    @include big {
+      max-width: 100%;
+    }
+
+    @include medium-plus {
+      max-width: 100%;
+    }
+
+    @include medium {
+      height: 45%;
+      left: 74%;
+      top: 0;
+    }
+
+    @include mini {
+      height: 46%;
+      left: 98%;
+      top: -150px;
+    }
+
+    @include micro {
+      left: 34%;
+      height: 20vh;
+    }
+  }
+
+  &__slice {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+
+    @include big {
+      max-width: 100%;
+    }
+
+    @include medium-plus {
+      max-width: 100%;
+    }
+
+    @include medium {
+      height: 35%;
+    }
+
+    @include mini {
+      height: 35%;
+      bottom: 50%;
+      right: 0%;
+    }
+
+    @include micro {
+      bottom: 15%;
+      right: 15%;
+      height: 20vh;
     }
   }
 }

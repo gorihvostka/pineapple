@@ -20,13 +20,22 @@
     text-align: center;
   }
 
-    @include mini {
-      flex-direction: column;
-      max-width: 95%;
-      padding: 30px 30px;
-      align-items: center;
-      text-align: center;
-    }
+  @include mini {
+    flex-direction: column;
+    max-width: 95%;
+    padding: 30px 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  @include micro {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 30px 30px;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+  }
 
   &::before {
     position: absolute;
@@ -43,9 +52,13 @@
       top: -80px;
     }
 
-        @include mini {
-          display: none;
-        }
+    @include mini {
+      display: none;
+    }
+
+    @include micro {
+      display: none;
+    }
   }
 
   &::after {
@@ -86,12 +99,19 @@
       text-align: initial;
     }
 
-        @include mini {
-          font-size: 28px;
-          max-width: 100%;
-          text-align: center;
-          margin-bottom: 25px;
-        }
+    @include mini {
+      font-size: 28px;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    @include micro {
+    font-size: 22px;
+    max-width: 380px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
   }
 
   &__subtitle {

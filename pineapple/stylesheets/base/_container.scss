@@ -19,4 +19,11 @@
     background-size: 45% 13%;
     background-image: url(/assets/images/vector-backgr-cut.svg);
   }
+
+  @include micro {
+    background-size: 45% 13%;
+    background-image: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

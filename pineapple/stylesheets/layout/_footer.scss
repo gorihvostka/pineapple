@@ -21,9 +21,19 @@
     max-width: 90%;
   }
 
+  @include micro {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
   &__rights {
     display: flex;
     align-items: center;
+
+    @include micro {
+      font-size: 14px;
+      text-align: center;
+    }
   }
 
   &__credits {
@@ -33,6 +43,11 @@
 
     @include mini {
       text-align: end;
+    }
+
+    @include micro {
+      font-size: 14px;
+      text-align: center;
     }
   }
 

@@ -12,8 +12,18 @@
     max-width: 70%;
   }
 
+  @include micro {
+    flex: none;
+    max-width: 100%;
+  }
+
   &__icon {
     margin-bottom: 25px;
+
+    @include micro {
+      margin-bottom: 15px;
+      max-width: 70%;
+    }
   }
 
   &__label {
@@ -31,6 +41,11 @@
 
     @include medium {
       font-size: 18px;
+      font-weight: 400;
+    }
+
+    @include micro {
+      font-size: 16px;
       font-weight: 400;
     }
   }

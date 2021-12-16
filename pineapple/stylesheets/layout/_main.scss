@@ -13,4 +13,8 @@
   @include mini {
     margin-bottom: 50px;
   }
+
+    @include micro {
+      margin-bottom: 50px;
+    }
 }

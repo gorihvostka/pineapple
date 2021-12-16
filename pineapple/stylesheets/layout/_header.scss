@@ -8,6 +8,12 @@
     justify-content: space-between;
     flex: 1 1 1200px;
     margin: 0 auto;
+
+    &__btn {
+        @include micro {
+            display: none;
+        }
+    }
 }
 
 .wrapper_header {
@@ -32,5 +38,17 @@
         max-width: 100%;
         padding-top: 35px;
         margin-bottom: 20px;
+    }
+
+    @include micro {
+        max-width: 85%;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 15px;
+        background: linear-gradient(141.77deg, #FF9415 0%, #FFC709 100.82%);
+        box-shadow: 0px 0px 25px rgb(248 175 42 / 40%);
+        border-radius: 0px 0px 60px 60px;
     }
 }

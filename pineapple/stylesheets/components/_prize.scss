@@ -1,6 +1,10 @@
 .prize {
   position: relative;
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   &__pic {
     max-width: 360px;
     max-height: 360px;
@@ -18,6 +22,11 @@
     @include mini {
       max-width: 300px;
       max-height: 300px;
+    }
+
+    @include micro {
+      max-width: 100%;
+      max-height: 150px;
     }
 
     &_1 {
@@ -56,6 +65,11 @@
     @include mini {
       font-size: 18px;
     }
+
+    @include micro {
+      bottom: -20px;
+      font-size: 16px;
+    }
   }
 
   &__name {
@@ -64,6 +78,10 @@
     padding: 18px 25px;
     background: $light-grey;
     border-radius: 15px 15px 15px 0px;
+
+    @include micro {
+      padding: 10px 10px;
+    }
   }
 
   &__number {
@@ -73,5 +91,9 @@
     background: $dark-grey;
     border-radius: 0px 0px 15px 15px;
     color: $light-grey;
+
+    @include micro {
+      padding: 10px 10px 10px;
+    }
   }
 }

@@ -16,12 +16,22 @@
     margin-bottom: 50px;
   }
 
+  @include micro {
+    max-width: 200px;
+    margin-bottom: 70px;
+  }
+
   &__heading {
     @extend %heading;
     margin-bottom: 70px;
 
     @include mini {
       margin-bottom: 40px;
+    }
+
+    @include micro {
+      margin-bottom: 20px;
+
     }
   }
 
@@ -36,6 +46,11 @@
       flex-direction: column;
       align-items: center;
     }
+
+    @include micro {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__divider {
@@ -46,6 +61,11 @@
 
     @include mini {
       height: 75px;
+      transform: rotate(90deg);
+    }
+
+    @include micro {
+      height: 45px;
       transform: rotate(90deg);
     }
 
