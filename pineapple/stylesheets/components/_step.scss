@@ -7,6 +7,11 @@
   flex: 1 1 320px;
   margin: auto;
 
+  @include mini {
+    flex: none;
+    max-width: 70%;
+  }
+
   &__icon {
     margin-bottom: 25px;
   }

@@ -20,6 +20,14 @@
     text-align: center;
   }
 
+    @include mini {
+      flex-direction: column;
+      max-width: 95%;
+      padding: 30px 30px;
+      align-items: center;
+      text-align: center;
+    }
+
   &::before {
     position: absolute;
     left: -80px;
@@ -34,6 +42,10 @@
       left: -30px;
       top: -80px;
     }
+
+        @include mini {
+          display: none;
+        }
   }
 
   &::after {
@@ -73,6 +85,13 @@
       max-width: 66%;
       text-align: initial;
     }
+
+        @include mini {
+          font-size: 28px;
+          max-width: 100%;
+          text-align: center;
+          margin-bottom: 25px;
+        }
   }
 
   &__subtitle {

@@ -27,4 +27,10 @@
     @include medium {
         max-width: 80%;
     }
+
+    @include mini {
+        max-width: 100%;
+        padding-top: 35px;
+        margin-bottom: 20px;
+    }
 }

@@ -17,6 +17,10 @@
     padding-bottom: 0;
   }
 
+  @include mini {
+    max-width: 90%;
+  }
+
   &__rights {
     display: flex;
     align-items: center;
@@ -24,6 +28,10 @@
 
   &__credits {
     @include medium {
+      text-align: end;
+    }
+
+    @include mini {
       text-align: end;
     }
   }

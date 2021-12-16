@@ -15,6 +15,11 @@
       max-height: 220px;
     }
 
+    @include mini {
+      max-width: 300px;
+      max-height: 300px;
+    }
+
     &_1 {
       transform: rotate(-15deg);
     }
@@ -45,6 +50,10 @@
       position: relative;
       bottom: 25px;
       font-weight: 500;
+      font-size: 18px;
+    }
+
+    @include mini {
       font-size: 18px;
     }
   }

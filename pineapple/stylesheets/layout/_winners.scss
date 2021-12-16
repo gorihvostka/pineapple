@@ -13,10 +13,19 @@
     margin-bottom: 80px;
   }
 
+  @include mini {
+    max-width: 85%;
+    margin-bottom: 50px;
+  }
+
   &__heading {
     @extend %heading;
     margin-bottom: 70px;
     position: relative;
+
+    @include mini {
+      margin-bottom: 40px;
+    }
   }
 
   &__heading::after {
@@ -37,6 +46,13 @@
       width: 100px;
       height: 100px;
     }
+
+    @include mini {
+      bottom: 100px;
+      right: -44px;
+      width: 90px;
+      height: 90px;
+    }
   }
 
   &__subtitle {
@@ -49,5 +65,9 @@
     box-sizing: border-box;
     border-radius: 15px;
     margin-bottom: 50px;
+
+    @include mini {
+      display: flex;
+    }
   }
 }
