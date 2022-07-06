@@ -428,6 +428,8 @@ template {
   vertical-align: bottom;
   width: auto;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .splide__spinner {
@@ -2038,10 +2040,13 @@ body {
 .logo {
   width: 100px;
   height: 100px;
-  background-color: hsl(39deg, 94%, 57%);
   border-radius: 50%;
   cursor: pointer;
   flex: 0 0 100px;
+}
+.logo__img {
+  width: auto;
+  height: 100%;
 }
 @media screen and (min-width: 841px) and (max-width: 1200px) {
   .logo {

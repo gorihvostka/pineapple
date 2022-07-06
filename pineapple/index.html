@@ -20,6 +20,7 @@
           <nav class="header__navbar navbar">
             <div class="navbar__logo logo">
               <h1 hidden>Pineapple test page</h1>
+              <img src="./assets/images/logo.png" alt="pineapple logo" class="logo__img">
             </div>
             <ul class="navbar__navigation">
               <li class="navbar__item">
@@ -237,7 +238,9 @@
       <div class="wrapper_footer">
         <footer class="footer">
           <div class="footer__rights">
-            <div class="footer__logo logo"></div>
+            <div class="footer__logo logo">
+              <img src="./assets/images/logo.png" alt="pineapple logo" class="logo__img">
+            </div>
             <div class="footer__text">© 2021. Все права защищены</div>
           </div>
           <div class="footer__credits">gorihvostka's Sass trainig project</div>
@@ -248,6 +251,8 @@
       const splide = new Splide(".splide", {
         perPage: 4,
         rewind: true,
+        type: 'loop',
+        snap: true,
       });
 
       splide.mount();
