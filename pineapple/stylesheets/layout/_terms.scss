@@ -1,7 +1,7 @@
 .terms {
   @extend %wrapper;
-    position: relative;
-    margin-bottom: 130px;
+  position: relative;
+  margin-bottom: 130px;
 
   @include huge {
     max-width: 70%;
@@ -75,12 +75,12 @@
     }
   }
 
-    &__parallax span {
+  &__parallax span {
     height: 15vw;
     width: 30vh;
     top: 45%;
     right: -30%;
     transform: rotate(-30deg);
     @include parallax-image(6);
-    }
+  }
 }

@@ -1,4 +1,5 @@
 document.addEventListener('mousemove', parallax);
+
 function parallax(event) {
   this.querySelectorAll('.parallax span').forEach((shift) => {
     const position = shift.getAttribute('depth');

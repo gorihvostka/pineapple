@@ -101,7 +101,7 @@
 
   &__slider {
     z-index: 5;
-    }
+  }
 
   &__parallax span:nth-child(1) {
     height: 7vw;
@@ -110,6 +110,6 @@
     left: -20%;
     filter: blur(6px);
     transform: rotate(-45deg);
-      @include parallax-image(5);
-    }
+    @include parallax-image(5);
+  }
 }
