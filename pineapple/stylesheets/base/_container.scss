@@ -5,20 +5,20 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: $backgr-color;
-  background-image: url(/assets/images/vector-backgr-cut.svg);
+  background-image: url(../assets/images/vector-backgr-cut.svg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 43%;
   overflow: hidden;
 
   @include huge {
-    background-image: url(/assets/images/vector-backgr.svg);
+    background-image: url(../assets/images/vector-backgr.svg);
     background-size: 50%;
   }
 
   @include medium {
     background-size: 45% 13%;
-    background-image: url(/assets/images/vector-backgr-cut.svg);
+    background-image: url(../assets/images/vector-backgr-cut.svg);
   }
 
   @include micro {

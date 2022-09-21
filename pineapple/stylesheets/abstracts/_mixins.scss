@@ -37,7 +37,7 @@
 }
 
 @mixin parallax-image($number, $zindex: 3) {
-  $url:"/assets/images/parallax-0#{$number}.png";
+  $url:"../assets/images/parallax-0#{$number}.png";
   position: absolute;
   background-image: url($url);
   background-size: contain;
