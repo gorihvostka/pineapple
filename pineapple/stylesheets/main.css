@@ -56,10 +56,8 @@ a {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -72,12 +70,9 @@ main {
 }
 
 с hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -85,10 +80,8 @@ main {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -104,8 +97,7 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
+  border-bottom: none; /* 1 */
 }
 
 /**
@@ -123,10 +115,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -176,14 +166,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -191,8 +177,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -201,8 +186,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -251,18 +235,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -285,10 +263,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -304,10 +280,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -322,10 +296,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -660,7 +632,6 @@ template {
   .splide.is-focus-in .splide__slide:focus {
     border: 3px solid #0bf;
   }
-
   .splide.is-focus-in .splide__track > .splide__list > .splide__slide:focus {
     border-color: #0bf;
   }
@@ -830,6 +801,7 @@ a:active {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 43%;
+  overflow: hidden;
 }
 @media screen and (min-width: 2200px) {
   .container {
@@ -956,8 +928,7 @@ body {
  */
 .hide-text {
   overflow: hidden;
-  padding: 0;
-  /* 1 */
+  padding: 0; /* 1 */
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -1146,6 +1117,7 @@ body {
 .first__title {
   margin-bottom: 30px;
   position: relative;
+  z-index: 5;
 }
 @media screen and (min-width: 200px) and (max-width: 500px) {
   .first__title {
@@ -1237,6 +1209,7 @@ body {
 }
 .first__pics {
   position: relative;
+  z-index: 5;
 }
 @media screen and (min-width: 841px) and (max-width: 1200px) {
   .first__pics {
@@ -1407,8 +1380,35 @@ body {
     height: 20vh;
   }
 }
+.first__parallax span:nth-child(1) {
+  height: 10vw;
+  width: 30vh;
+  top: 30%;
+  left: -35%;
+  filter: blur(2px);
+  transform: rotate(-30deg);
+  position: absolute;
+  background-image: url("/assets/images/parallax-08.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+.first__parallax span:nth-child(2) {
+  height: 7vw;
+  width: 15vh;
+  top: 5%;
+  right: 24%;
+  filter: blur(6px);
+  transform: rotate(-30deg);
+  position: absolute;
+  background-image: url("/assets/images/parallax-04.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
 
 .terms {
+  position: relative;
   margin-bottom: 130px;
 }
 @media screen and (min-width: 2200px) {
@@ -1436,6 +1436,7 @@ body {
 }
 .terms__heading {
   margin-bottom: 70px;
+  z-index: 5;
 }
 @media screen and (min-width: 501px) and (max-width: 840px) {
   .terms__heading {
@@ -1449,9 +1450,12 @@ body {
 }
 .terms__subtitle {
   max-width: 760px;
+  z-index: 5;
 }
 .terms__steps {
   display: flex;
+  position: relative;
+  z-index: 5;
 }
 @media screen and (min-width: 501px) and (max-width: 840px) {
   .terms__steps {
@@ -1483,10 +1487,23 @@ body {
     transform: rotate(90deg);
   }
 }
+.terms__parallax span {
+  height: 15vw;
+  width: 30vh;
+  top: 45%;
+  right: -30%;
+  transform: rotate(-30deg);
+  position: absolute;
+  background-image: url("/assets/images/parallax-06.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
 
 .prizes {
   margin-bottom: 120px;
   position: relative;
+  z-index: 1;
 }
 @media screen and (min-width: 2200px) {
   .prizes {
@@ -1569,6 +1586,7 @@ body {
 .prizes__heading {
   color: hsl(0deg, 0%, 100%);
   margin-bottom: 50px;
+  z-index: 5;
 }
 @media screen and (min-width: 200px) and (max-width: 500px) {
   .prizes__heading {
@@ -1588,6 +1606,7 @@ body {
   margin-bottom: 65px;
   justify-content: space-evenly;
   width: 100%;
+  z-index: 5;
 }
 @media screen and (min-width: 841px) and (max-width: 1200px) {
   .prizes__elements {
@@ -1662,10 +1681,36 @@ body {
     top: 0;
   }
 }
+.prizes__parallax span:nth-child(1) {
+  height: 15vw;
+  width: 44vh;
+  top: -12%;
+  left: -20%;
+  filter: blur(10px);
+  transform: rotate(220deg);
+  position: absolute;
+  background-image: url("/assets/images/parallax-08.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+.prizes__parallax span:nth-child(2) {
+  height: 15vw;
+  width: 30vh;
+  bottom: -10%;
+  right: -10%;
+  position: absolute;
+  background-image: url("/assets/images/parallax-03.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
 
 .winners {
   max-width: 63%;
   margin-bottom: 100px;
+  position: relative;
+  z-index: 5;
 }
 @media screen and (min-width: 2200px) {
   .winners {
@@ -1763,6 +1808,22 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+.winners__slider {
+  z-index: 5;
+}
+.winners__parallax span:nth-child(1) {
+  height: 7vw;
+  width: 41vh;
+  top: 10%;
+  left: -20%;
+  filter: blur(6px);
+  transform: rotate(-45deg);
+  position: absolute;
+  background-image: url("/assets/images/parallax-05.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .more {

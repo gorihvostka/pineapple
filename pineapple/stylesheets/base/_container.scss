@@ -9,6 +9,7 @@
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 43%;
+  overflow: hidden;
 
   @include huge {
     background-image: url(/assets/images/vector-backgr.svg);
