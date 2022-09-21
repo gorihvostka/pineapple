@@ -784,37 +784,37 @@ a:active {
 
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy Light"), local("GilroyLight"), url("/assets/fonts/GilroyLight/GilroyLight.woff2") format("woff2"), url("/assets/fonts/GilroyLight/GilroyLight.woff") format("woff"), url("/assets/fonts/GilroyLight/GilroyLight.ttf") format("truetype");
+  src: local("Gilroy Light"), local("GilroyLight"), url("../assets/fonts/GilroyLight/GilroyLight.woff2") format("woff2"), url("../assets/fonts/GilroyLight/GilroyLight.woff") format("woff"), url("../assets/fonts/GilroyLight/GilroyLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy Regular"), local("GilroyRegular"), url("/assets/fonts/GilroyRegular/GilroyRegular.woff2") format("woff2"), url("/assets/fonts/GilroyRegular/GilroyRegular.woff") format("woff"), url("/assets/fonts/GilroyRegular/GilroyRegular.ttf") format("truetype");
+  src: local("Gilroy Regular"), local("GilroyRegular"), url("../assets/fonts/GilroyRegular/GilroyRegular.woff2") format("woff2"), url("../assets/fonts/GilroyRegular/GilroyRegular.woff") format("woff"), url("../assets/fonts/GilroyRegular/GilroyRegular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy Medium"), local("GilroyMedium"), url("/assets/fonts/GilroyMedium/GilroyMedium.woff2") format("woff2"), url("/assets/fonts/GilroyMedium/GilroyMedium.woff") format("woff"), url("/assets/fonts/GilroyMedium/GilroyMedium.ttf") format("truetype");
+  src: local("Gilroy Medium"), local("GilroyMedium"), url("../assets/fonts/GilroyMedium/GilroyMedium.woff2") format("woff2"), url("../assets/fonts/GilroyMedium/GilroyMedium.woff") format("woff"), url("../assets/fonts/GilroyMedium/GilroyMedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy Semibold"), local("GilroySemibold"), url("/assets/fonts/GilroySemibold/GilroySemibold.woff2") format("woff2"), url("/assets/fonts/GilroySemibold/GilroySemibold.woff") format("woff"), url("/assets/fonts/GilroySemibold/GilroySemibold.ttf") format("truetype");
+  src: local("Gilroy Semibold"), local("GilroySemibold"), url("../assets/fonts/GilroySemibold/GilroySemibold.woff2") format("woff2"), url("../assets/fonts/GilroySemibold/GilroySemibold.woff") format("woff"), url("../assets/fonts/GilroySemibold/GilroySemibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy Bold"), local("GilroyBold"), url("/assets/fonts/GilroyBold/GilroyBold.woff2") format("woff2"), url("/assets/fonts/GilroyBold/GilroyBold.woff") format("woff"), url("/assets/fonts/GilroyBold/GilroyBold.ttf") format("truetype");
+  src: local("Gilroy Bold"), local("GilroyBold"), url("../assets/fonts/GilroyBold/GilroyBold.woff2") format("woff2"), url("../assets/fonts/GilroyBold/GilroyBold.woff") format("woff"), url("../assets/fonts/GilroyBold/GilroyBold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy Black"), local("GilroyBlack"), url("/assets/fonts/GilroyBlack/GilroyBlack.woff2") format("woff2"), url("/assets/fonts/GilroyBlack/GilroyBlack.woff") format("woff"), url("/assets/fonts/GilroyBlack/GilroyBlack.ttf") format("truetype");
+  src: local("Gilroy Black"), local("GilroyBlack"), url("../assets/fonts/GilroyBlack/GilroyBlack.woff2") format("woff2"), url("../assets/fonts/GilroyBlack/GilroyBlack.woff") format("woff"), url("../assets/fonts/GilroyBlack/GilroyBlack.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -825,7 +825,7 @@ a:active {
   padding-left: 20px;
   padding-right: 20px;
   background-color: hsl(220deg, 11%, 95%);
-  background-image: url(/assets/images/vector-backgr-cut.svg);
+  background-image: url(../assets/images/vector-backgr-cut.svg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 43%;
@@ -833,14 +833,14 @@ a:active {
 }
 @media screen and (min-width: 2200px) {
   .container {
-    background-image: url(/assets/images/vector-backgr.svg);
+    background-image: url(../assets/images/vector-backgr.svg);
     background-size: 50%;
   }
 }
 @media screen and (min-width: 841px) and (max-width: 1200px) {
   .container {
     background-size: 45% 13%;
-    background-image: url(/assets/images/vector-backgr-cut.svg);
+    background-image: url(../assets/images/vector-backgr-cut.svg);
   }
 }
 @media screen and (min-width: 200px) and (max-width: 500px) {
@@ -1123,7 +1123,7 @@ body {
   width: 230px;
   height: 450px;
   content: "";
-  background-image: url(/assets/images/doodle-oils_triangles.png);
+  background-image: url(../assets/images/doodle-oils_triangles.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1139,7 +1139,7 @@ body {
     width: 20vw;
     height: 200px;
     content: "";
-    background-image: url(/assets/images/doodle-oils_triangles.png);
+    background-image: url(../assets/images/doodle-oils_triangles.png);
   }
 }
 .first__title {
@@ -1159,7 +1159,7 @@ body {
   width: 300px;
   height: 40px;
   content: "";
-  background-image: url(/assets/images/doodle-line4.png);
+  background-image: url(../assets/images/doodle-line4.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1265,7 +1265,7 @@ body {
   height: 330px;
   content: "";
   transform: rotate(-10deg);
-  background-image: url(/assets/images/doodle-oils.png);
+  background-image: url(../assets/images/doodle-oils.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1416,7 +1416,7 @@ body {
   filter: blur(2px);
   transform: rotate(-30deg);
   position: absolute;
-  background-image: url("/assets/images/parallax-08.png");
+  background-image: url("../assets/images/parallax-08.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 3;
@@ -1429,7 +1429,7 @@ body {
   filter: blur(6px);
   transform: rotate(-30deg);
   position: absolute;
-  background-image: url("/assets/images/parallax-04.png");
+  background-image: url("../assets/images/parallax-04.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
@@ -1522,7 +1522,7 @@ body {
   right: -30%;
   transform: rotate(-30deg);
   position: absolute;
-  background-image: url("/assets/images/parallax-06.png");
+  background-image: url("../assets/images/parallax-06.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 3;
@@ -1578,7 +1578,7 @@ body {
   height: 130px;
   content: "";
   transform: rotate(-80deg);
-  background-image: url(/assets/images/doodle-arrow1.png);
+  background-image: url(../assets/images/doodle-arrow1.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1663,7 +1663,7 @@ body {
   width: 234px;
   height: 195px;
   content: "";
-  background-image: url(/assets/images/doodle-circles.png);
+  background-image: url(../assets/images/doodle-circles.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1717,7 +1717,7 @@ body {
   filter: blur(10px);
   transform: rotate(220deg);
   position: absolute;
-  background-image: url("/assets/images/parallax-08.png");
+  background-image: url("../assets/images/parallax-08.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 3;
@@ -1728,7 +1728,7 @@ body {
   bottom: -10%;
   right: -10%;
   position: absolute;
-  background-image: url("/assets/images/parallax-03.png");
+  background-image: url("../assets/images/parallax-03.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 3;
@@ -1785,7 +1785,7 @@ body {
   width: 130px;
   height: 190px;
   content: "";
-  background-image: url(/assets/images/doodle-crown.png);
+  background-image: url(../assets/images/doodle-crown.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1848,7 +1848,7 @@ body {
   filter: blur(6px);
   transform: rotate(-45deg);
   position: absolute;
-  background-image: url("/assets/images/parallax-05.png");
+  background-image: url("../assets/images/parallax-05.png");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 3;
@@ -1903,7 +1903,7 @@ body {
   width: 170px;
   height: 400px;
   content: "";
-  background-image: url(/assets/images/doodle-vortex.png);
+  background-image: url(../assets/images/doodle-vortex.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
