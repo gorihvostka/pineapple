@@ -3,6 +3,8 @@
   @extend %wrapper;
   max-width: 63%;
   margin-bottom: 100px;
+  position: relative;
+  z-index: 5;
 
   @include huge {
     max-width: 84.5%;
@@ -95,5 +97,19 @@
       display: flex;
       flex-direction: column;
     }
+  }
+
+  &__slider {
+    z-index: 5;
+  }
+
+  &__parallax span:nth-child(1) {
+    height: 7vw;
+    width: 41vh;
+    top: 10%;
+    left: -20%;
+    filter: blur(6px);
+    transform: rotate(-45deg);
+    @include parallax-image(5);
   }
 }

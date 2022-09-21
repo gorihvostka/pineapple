@@ -8,13 +8,17 @@
 /// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
 @mixin on-event($self: false) {
   @if $self {
+
     &,
     &:hover,
     &:active,
     &:focus {
       @content;
     }
-  } @else {
+  }
+
+  @else {
+
     &:hover,
     &:active,
     &:focus {
@@ -32,3 +36,11 @@
   }
 }
 
+@mixin parallax-image($number, $zindex: 3) {
+  $url:"/assets/images/parallax-0#{$number}.png";
+  position: absolute;
+  background-image: url($url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: $zindex;
+}

@@ -7,6 +7,7 @@
     <title>Pineapple — Sass trainig project</title>
     <link rel="stylesheet" href="./stylesheets/main.css" />
     <script src="./script/splide.min.js"></script>
+    <script src="./script/parallax.js"></script>
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -20,7 +21,11 @@
           <nav class="header__navbar navbar">
             <div class="navbar__logo logo">
               <h1 hidden>Pineapple test page</h1>
-              <img src="./assets/images/logo.png" alt="pineapple logo" class="logo__img">
+              <img
+                src="./assets/images/logo.png"
+                alt="pineapple logo"
+                class="logo__img"
+              />
             </div>
             <ul class="navbar__navigation">
               <li class="navbar__item">
@@ -40,6 +45,10 @@
       <div class="wrapper_main">
         <main class="main">
           <section class="first">
+            <div class="first__parallax parallax">
+              <span depth="5"></span>
+              <span depth="2"></span>
+            </div>
             <div class="first__texts">
               <h2 class="first__title main-title">
                 <span class="accent">Ананас</span> — теперь ягода, а каждый день
@@ -73,6 +82,9 @@
             </div>
           </section>
           <section class="terms">
+            <div class="terms__parallax parallax">
+              <span depth="12"></span>
+            </div>
             <div class="terms__heading">
               <h3 class="terms__title title">
                 Условия <span class="accent">акции</span>
@@ -120,6 +132,10 @@
             </div>
           </section>
           <section class="prizes">
+            <div class="prizes__parallax parallax">
+              <span depth="2"></span>
+              <span depth="10"></span>
+            </div>
             <div class="prizes__heading">
               <h3 class="prizes__title title">Уникальные призы</h3>
               <h4 class="prizes__subtitle subtitle">
@@ -164,6 +180,9 @@
             <button class="btn btn_white" type="">Участвовать</button>
           </section>
           <section class="winners">
+            <div class="winners__parallax parallax">
+              <span depth="2"></span>
+            </div>
             <div class="winners__heading">
               <h3 class="winners__title title">Наши победители</h3>
               <h4 class="winners__subtitle subtitle">
@@ -239,7 +258,11 @@
         <footer class="footer">
           <div class="footer__rights">
             <div class="footer__logo logo">
-              <img src="./assets/images/logo.png" alt="pineapple logo" class="logo__img">
+              <img
+                src="./assets/images/logo.png"
+                alt="pineapple logo"
+                class="logo__img"
+              />
             </div>
             <div class="footer__text">© 2021. Все права защищены</div>
           </div>
@@ -251,7 +274,7 @@
       const splide = new Splide(".splide", {
         perPage: 4,
         rewind: true,
-        type: 'loop',
+        type: "loop",
         snap: true,
       });
 

@@ -3,6 +3,7 @@
   @extend %rectangle;
   margin-bottom: 120px;
   position: relative;
+  z-index: 1;
 
   @include huge {
     max-width: 80%;
@@ -73,6 +74,7 @@
     @extend %heading;
     color: $light-grey;
     margin-bottom: 50px;
+    z-index: 5;
 
     @include micro {
       margin-bottom: 30px;
@@ -92,6 +94,7 @@
     margin-bottom: 65px;
     justify-content: space-evenly;
     width: 100%;
+    z-index: 5;
 
     @include medium {
       width: 95%;
@@ -158,5 +161,23 @@
     @include micro {
       top: 0;
     }
+  }
+
+  &__parallax span:nth-child(1) {
+    height: 15vw;
+    width: 44vh;
+    top: -12%;
+    left: -20%;
+    filter: blur(10px);
+    transform: rotate(220deg);
+    @include parallax-image(8);
+  }
+
+  &__parallax span:nth-child(2) {
+    height: 15vw;
+    width: 30vh;
+    bottom: -10%;
+    right: -10%;
+    @include parallax-image(3);
   }
 }

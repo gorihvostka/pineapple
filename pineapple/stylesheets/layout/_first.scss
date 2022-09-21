@@ -83,6 +83,7 @@
   &__title {
     margin-bottom: 30px;
     position: relative;
+    z-index: 5;
 
     @include micro {
       margin-bottom: 24px;
@@ -167,6 +168,7 @@
 
   &__pics {
     position: relative;
+    z-index: 5;
 
     @include medium {
       max-width: 45%;
@@ -317,5 +319,25 @@
       right: 15%;
       height: 20vh;
     }
+  }
+
+  &__parallax span:nth-child(1) {
+    height: 10vw;
+    width: 30vh;
+    top: 30%;
+    left: -35%;
+    filter: blur(2px);
+    transform: rotate(-30deg);
+    @include parallax-image(8);
+  }
+
+  &__parallax span:nth-child(2) {
+    height: 7vw;
+    width: 15vh;
+    top: 5%;
+    right: 24%;
+    filter: blur(6px);
+    transform: rotate(-30deg);
+    @include parallax-image(4, 1);
   }
 }
